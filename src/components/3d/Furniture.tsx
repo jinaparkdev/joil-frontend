@@ -134,7 +134,7 @@ export default function Furniture({item}: FurnitureProps) {
             document.removeEventListener('pointerup', handleGlobalPointerUp)
             document.removeEventListener('pointermove', handleGlobalPointerMove)
         }
-    }, [isDragging, camera, raycaster, gl, item.id, updateFurniture, setDragging])
+    }, [isDragging, camera, raycaster, gl, item.id, updateFurniture, setDragging, dragPlane])
 
     const FallbackBox = () => (
         <mesh castShadow receiveShadow>
